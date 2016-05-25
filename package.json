@@ -1,0 +1,33 @@
+{
+  "name": "generator-jg-express",
+  "version": "0.0.1",
+  "description": "crea la estructura de un proyecto express",
+  "homepage": "",
+  "author": {
+    "name": "Jorge Godoy",
+    "email": "godoy.jf@gmail.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "slugg": "1.0.0",
+    "yeoman-generator": "^0.22.0"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.0.0",
+    "yeoman-assert": "^2.0.0"
+  },
+  "repository": "jfgodoy/generator-jg-express",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://jfgodoy.mit-license.org/"
+  }
+}

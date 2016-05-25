@@ -1,0 +1,47 @@
+{
+  "name": "<%= slugName %>",
+  "version": "0.1.0",
+  "description": "<%= description.replace(/"/g, '\\"') %>",
+  "author": "<%- author.replace(/"/g, '\\"') %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "build": "BROCCOLI_ENV=production broccoli build _build && rm -rf build && mv _build build"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "broccoli-asset-rev": "^2.4.2",
+    "broccoli-less-single": "^0.6.2",
+    "compression": "~1.6.2",
+    "config": "~1.20.1",
+    "core-util-is": "~1.0.2",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "express-handlebars": "~3.0.0",
+    "express-session": "^1.13.0",
+    "express-winston": "^1.3.1",
+    "formidable": "^1.0.17",
+    "meddleware": "~3.0.3",
+    "serve-favicon": "~2.3.0",
+    "serve-static": "~1.10.2",
+    "try-require": "~1.2.1",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "~6.6.0",
+    "babelify": "~7.3.0",
+    "broccoli": "~0.16.9",
+    "broccoli-asset-rev": "~2.4.2",
+    "broccoli-cli": "~1.0.0",
+    "broccoli-dust": "~1.1.0",
+    "broccoli-env": "0.0.1",
+    "broccoli-fast-browserify": "~0.2.11",
+    "broccoli-funnel": "~1.0.1",
+    "broccoli-handlebars-commonjs": "~1.1.1",
+    "broccoli-sass": "~0.7.0",
+    "broccoli-stew": "~1.2.0",
+    "broccoli-uglify-js": "~0.1.3",
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5"
+  }
+}

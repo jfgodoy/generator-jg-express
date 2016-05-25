@@ -1,0 +1,13 @@
+
+# Confidential information for configuration
+config/local.*
+!config/local.example.*
+
+# Temporal files
+tmp
+
+# Compiled sources
+build
+
+# Dependency directory
+node_modules
