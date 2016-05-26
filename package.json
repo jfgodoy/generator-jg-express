@@ -1,7 +1,7 @@
 {
   "name": "generator-jg-express",
-  "version": "0.0.1",
-  "description": "crea la estructura de un proyecto express",
+  "version": "0.0.2",
+  "description": "An Expressjs generator for Yeoman",
   "homepage": "",
   "author": {
     "name": "Jorge Godoy",
