@@ -57,8 +57,14 @@ module.exports = yeoman.Base.extend({
   writing: {
     files: function() {
       this.fs.copyTpl(
-        this.templatePath('common/{**,.*,**/.*}'),
+        this.templatePath('common/{**/.*,**/!(gitignore)}'),
         this.destinationPath(),
+        this._getModel()
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('common/gitignore'),
+        this.destinationPath('.gitignore'),
         this._getModel()
       );
     }
